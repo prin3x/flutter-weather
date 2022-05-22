@@ -1,0 +1,119 @@
+{
+  "project_info": {
+    "project_number": "334294281475",
+    "firebase_url": "https://eco-db-ff194.firebaseio.com",
+    "project_id": "eco-db-ff194",
+    "storage_bucket": "eco-db-ff194.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:334294281475:android:cb990f50a58a52279c4d36",
+        "android_client_info": {
+          "package_name": "com.example.course_firebase"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "334294281475-7mpnasudvtcalrjsjsio9g93dpc8k3gj.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB7SIOvn4V7su_3UHmlcnqkKPOeZ4ADlFE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "334294281475-7mpnasudvtcalrjsjsio9g93dpc8k3gj.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "334294281475-2prcqmqmlpp4it6v2ra8thun6ektqptc.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.firebaseDemo"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:334294281475:android:b41de056b0ba16c49c4d36",
+        "android_client_info": {
+          "package_name": "com.example.firebase_demo"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "334294281475-7mpnasudvtcalrjsjsio9g93dpc8k3gj.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB7SIOvn4V7su_3UHmlcnqkKPOeZ4ADlFE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "334294281475-7mpnasudvtcalrjsjsio9g93dpc8k3gj.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "334294281475-2prcqmqmlpp4it6v2ra8thun6ektqptc.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.firebaseDemo"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:334294281475:android:2c2ad0ff0d175de79c4d36",
+        "android_client_info": {
+          "package_name": "com.example.weather_app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "334294281475-7mpnasudvtcalrjsjsio9g93dpc8k3gj.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB7SIOvn4V7su_3UHmlcnqkKPOeZ4ADlFE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "334294281475-7mpnasudvtcalrjsjsio9g93dpc8k3gj.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "334294281475-2prcqmqmlpp4it6v2ra8thun6ektqptc.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.firebaseDemo"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
