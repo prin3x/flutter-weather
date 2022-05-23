@@ -32,6 +32,7 @@ class _WeatherSeriesState extends State<WeatherSeries> {
             .where('city', isEqualTo: 'Bangkok')
             .where('dt',
                 isGreaterThanOrEqualTo: DateTime.now().millisecondsSinceEpoch)
+            .orderBy('dt')
             .limit(4)
             .snapshots(),
         builder: (BuildContext context, AsyncSnapshot<QuerySnapshot> snapshot) {
@@ -41,6 +42,7 @@ class _WeatherSeriesState extends State<WeatherSeries> {
           }
 
           if (snapshot.hasData) {
+            print('des');
             return Container(
                 height: height / 5,
                 width: height / 2.75,

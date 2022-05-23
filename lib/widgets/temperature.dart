@@ -1,4 +1,3 @@
-
 import 'package:flutter/material.dart';
 import 'package:weather_app/widgets/weather_icon.dart';
 
@@ -21,7 +20,7 @@ class TemperatureWidget extends StatefulWidget {
 }
 
 class _TemperatureWidgetState extends State<TemperatureWidget> {
-  Map<String, double>tempMap = {
+  Map<String, double> tempMap = {
     'celcius': 0,
     'fahrenheit': 0,
   };
@@ -32,7 +31,6 @@ class _TemperatureWidgetState extends State<TemperatureWidget> {
     tempMap['fahrenheit'] = widget.temperature * 1.8 + 32;
     super.initState();
   }
-
 
   @override
   Widget build(BuildContext context) {
@@ -59,26 +57,33 @@ class _TemperatureWidgetState extends State<TemperatureWidget> {
               child: WeatherIcon(
                   height: height,
                   condition: widget.weather,
-                  isDay: widget.currentTimeStamps.hour < 18 && widget.currentTimeStamps.hour > 5),
+                  isDay: widget.currentTimeStamps.hour < 18 &&
+                      widget.currentTimeStamps.hour > 5),
             ),
             Container(
               width: width / 2,
               height: height / 6,
               child: Column(
                 children: [
-                  ElevatedButton.icon(
-                      onPressed: () {
-                        setState(() {
-                          tempType == 'celcius'
-                              ? tempType = 'fahrenheit'
-                              : tempType = 'celcius';
-                        });
-                      },
-                      icon: Icon(Icons.swap_horiz_outlined,
-                          color: Color.fromARGB(255, 1, 38, 54), size: height / 30),
-                      label: Text('')),
+                  Row(
+                    mainAxisAlignment: MainAxisAlignment.end,
+                    children: [
+                      IconButton(
+                          onPressed: () {
+                            setState(() {
+                              tempType == 'celcius'
+                                  ? tempType = 'fahrenheit'
+                                  : tempType = 'celcius';
+                            });
+                          },
+                          icon: Icon(Icons.swap_horiz_outlined,
+                              color: Colors.white,
+                              size: height / 30)),
+                    ],
+                  ),
                   Center(
-                    child: Text('${tempMap[tempType]?.toStringAsFixed(0)}\u00B0${tempType == 'fahrenheit' ? 'F' : 'C'}',
+                    child: Text(
+                        '${tempType == 'fahrenheit' ? (widget.temperature * 1.8 + 32).toStringAsFixed(0) : widget.temperature.toStringAsFixed(0)}\u00B0${tempType == 'fahrenheit' ? 'F' : 'C'}',
                         style: TextStyle(fontSize: height / 10)),
                   ),
                 ],

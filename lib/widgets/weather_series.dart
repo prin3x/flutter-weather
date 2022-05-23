@@ -55,7 +55,7 @@ class _WeatherSeriesState extends State<WeatherSeries> {
                                     snapshot.data!.docs[index]['dt']))),
                             WeatherIcon(
                               height: height / 4,
-                              condition: widget.weather,
+                              condition: snapshot.data!.docs[index]['weather'],
                             ),
                             SizedBox(height: 10),
                             Text(
